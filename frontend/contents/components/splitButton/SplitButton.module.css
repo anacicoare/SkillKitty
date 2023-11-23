@@ -1,0 +1,21 @@
+.button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgb(23, 162, 184);
+  }
+  
+  .button:hover {
+    background-color: rgb(24, 151, 170);
+  }
+
+  .menuControl {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 0;
+    border-left: rem(1px) solid var(--mantine-color-body);
+    background-color: rgb(23, 162, 184);
+  }
+
+  .menuControl:hover {
+    background-color: rgb(24, 151, 170);
+  }

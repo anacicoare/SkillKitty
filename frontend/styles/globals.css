@@ -1,0 +1,224 @@
+/* @import 'tailwindcss/base'; */
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.sidebar .nav-link p {
+  margin-left: 10px !important;
+}
+
+/* loading page */
+#loading {
+  width: 100%;
+  height: 100%;
+  /*height: 0 !important;*/
+  min-height: 100vh !important;
+  top: 0;
+  left: 0;
+  position: sticky;
+  display: block;
+  opacity: 1;
+  background-color: #f1f2f3;
+  z-index: 100;
+  text-align: center;
+  padding-right: 150px;
+}
+
+#loading-image {
+  position: absolute;
+  top: 250px;
+  z-index: 99;
+}
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  background-color: #DDD;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#back2Top:hover {
+  background-color: #DDF;
+  color: #000;
+}
+
+.overlay-wrapper {
+  position: relative;
+}
+
+.bootstrap-select {
+  border: 1px solid #dddddd;
+  border-radius: 0.25rem;
+  margin-right: 5px;
+}
+
+/*datatable elems*/
+.dt-buttons {
+  display: inline-block;
+}
+
+.dataTables_filter {
+  display: inline-block;
+  float: right;
+}
+
+
+[data-card-widget="collapse"] {
+  cursor: pointer;
+}
+
+/* .nav-item{
+  margin-left: 5px !important;
+} */
+
+.violate_background {
+  background-color: #f58f7d;
+}
+
+.gantt-container {
+  height: 650px;
+}
+
+/* Custom style today of gantt chart */
+.gantt .today-highlight {
+  fill: #ffe86e;
+}
+
+/* Custom style for calendar */
+.fc-day-sun:not(.fc-col-header-cell),
+.fc-day-sat:not(.fc-col-header-cell),
+.fc-day-isweekend {
+  background-color: #eff5ff;
+}
+
+.wrapper .content-wrapper {
+  min-height: calc(100vh - calc(3.5rem + 1.5px) - calc(3.5rem + 1.5px));
+}
+
+/* Reset css admin LTE */
+label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: unset;
+}
+
+/* Cutom button show pending requests */
+.fc-buttonShowPendingRequests-button.fc-button.fc-button-primary {
+  background-color: #FAB005;
+  border-color: #FAB005;
+  box-shadow: none !important;
+  transition: 100ms all;
+}
+
+.fc-buttonShowPendingRequests-button.fc-button.fc-button-primary:active,
+.fc-buttonShowPendingRequests-button.fc-button.fc-button-primary:hover {
+  background-color: #F59F00;
+  border-color: #F59F00;
+}
+
+.fc-buttonShowPendingRequests-button.fc-button.fc-button-primary:active {
+  transform: translateY(2px);
+}
+
+.fc-buttonShowPendingRequests-button.fc-button.fc-button-primary.disabled {
+  background-color: #76818d;
+  border: #76818d;
+  pointer-events: none;
+}
+
+/* Schedule build cron task */
+.block-schedule-build .fc-header-toolbar.fc-toolbar {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* Custom style header toolbar calendar */
+.calendar-plan-site .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr {
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+/* Force z-index higher */
+.fc-timegrid-event-harness.fc-timegrid-event-harness-inset:hover {
+  z-index: 100 !important;
+}
+
+.fc-scrollgrid .fc-timegrid-col-frame:hover {
+  z-index: 100 !important;
+}
+
+/* Custom checkbox days */
+.custom-checkbox-days[data-checked="true"] .custom-label {
+  color: white !important;
+}
+
+/* Fix issue tooptip event overlap */
+.fc-daygrid-day-events > .fc-daygrid-event-harness:hover {
+  z-index: 100;
+}
